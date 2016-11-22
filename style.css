@@ -54,7 +54,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -71,15 +71,15 @@ body {
 }
 
 .carousel-inner > .item.first-slide {
-    background-image : url(picture1.jpg);
+    background-image : url(1.jpg);
 }
 
 .carousel-inner > .item.second-slide {
-    background-image : url(picture2.jpg);
+    background-image : url(2.jpg);
 }
 
 .carousel-inner > .item.third-slide {
-    background-image : url(picture3.jpg);
+    background-image : url(3.jpg);
 }
 
 
@@ -91,6 +91,7 @@ body {
 	border-top: 8px solid #ffc47b;
 	background-color: #fcfcfc;
 	padding-top : 40px;
+	margin-bottom : 10px;
 }
 
 .index-content .col-lg-4 {
@@ -164,6 +165,31 @@ body {
 
 .animation-show {
 	opacity: 0;
+}
+
+footer {
+	padding: 63px 15px 47px 15px;
+    border-top: 8px solid #fafafa;
+    background: #ffffff;
+	color: #b3b3b3;
+	border-bottom: 8px solid #ffc47b;
+}
+
+footer .footer-title  {
+	font-size: 38px;
+	margin-right: 5px;
+}
+
+footer .first-title {
+	color : #ffc47b;
+}
+
+footer .second-title {
+	color : #cdcdcd;
+}
+
+footer .footer-copyright {
+	line-height: 54px;
 }
 
 
