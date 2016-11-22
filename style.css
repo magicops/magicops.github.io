@@ -106,19 +106,9 @@ body {
   margin-left: 10px;
 }
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the index-content headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+.headings .img-circle {
+  width : 190px;
+  height : 190px;
 }
 
 
