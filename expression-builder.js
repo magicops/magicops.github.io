@@ -78,17 +78,18 @@ function expressionBuilder(selector, options) {
  
     function onKeyup(e) {
  
-        if (['Up', 'Down'].indexOf(e.key) > -1 && inSearchMode) {
+        if (['Up', 'Down', 'ArrowUp', 'ArrowDown'].indexOf(e.key) > -1 && inSearchMode) {
             let index = parseInt(suggestions.attr('data-index')),
-                divs = suggestions.find('div.exp-suggestion-item');
+                divs = suggestions.find('div.exp-suggestion-item'),
+                isUp = e.key == 'Up' || e.key == 'ArrowUp';
  
-            if (e.key == 'Up' && index == 0 || e.key == 'Down' && divs.size() == index + 1)
+            if (isUp && index == 0 || !isUp && divs.size() == index + 1)
                 return;
  
-            if (e.key == 'Up')
+            if (isUp)
                 index--;
  
-            if (e.key == 'Down')
+            if (!isUp)
                 index++;
  
             suggestions.attr('data-index', index);
