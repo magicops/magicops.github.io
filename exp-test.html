@@ -5,14 +5,16 @@
     <script src="expression-builder.js"></script>
     <link rel='stylesheet' href="exp-style.css"/>
     <script>
-      expressionBuilder('#txt', {
-    variables: [
-      {
-        variableId: 1,
-        name: 'test'
-      }      
-    ]
-});
+      $(function(){
+        expressionBuilder('#txt', {
+            variables: [
+              {
+                variableId: 1,
+                name: 'test'
+              }      
+            ]
+        });
+      });
     </script>
   </head>
   <body>
